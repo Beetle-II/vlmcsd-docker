@@ -9,6 +9,9 @@ cd vlmcsd
 # Use docker-compose service
 docker-compose up -d
 
+# Show logs
+docker-compose logs -f
+
 # or docker build image
 docker build -t vlmcsd .
 docker run -idt -p 1688:1688 vlmcsd
